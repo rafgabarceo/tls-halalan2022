@@ -45,8 +45,12 @@
 			<section class="col">Candidate Profiles</section>
 		</div>
 	</main>
-	<footer>
-		<h1>Hello, footer!</h1>
+	<!-- Footer -->
+	<footer class="py-5">
+		<div class="container">
+			<img src="assets/tls-star.svg" alt="The LaSallian Star" class="footer-logo mb-4">
+			<p class="footer-description"><strong>The LaSallian</strong> is the official student publication of De La Salle University. It is of the students, by the students, and for the students. Our student writers, photographers, artists, and web managers are committed to the 60-year tradition of journalistic excellence and issue-oriented critical thinking.</p>
+		</div>
 	</footer>
     
 	<!-- Bootstrap Bundle with Popper -->
