@@ -17,7 +17,7 @@
 	<title>Hello, world!</title>
   </head>
   <body>
-	<h1>[Insert Navbar]</h1>
+	<h1>Hello Navbar!</h1>
 
     <header class="d-flex flex-column align-items-center">
         <img src="assets/halalan-2022-title.svg" alt="#Halalan2022" class="header-wordmark mb-3">
