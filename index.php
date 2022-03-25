@@ -55,6 +55,24 @@
 					<img src="assets/tls-star.svg" alt="The LaSallian Star" class="footer-logo mb-4">
 					<!-- Footer Text -->
 					<p class="footer-description"><strong>The LaSallian</strong> is the official student publication of De La Salle University. It is of the students, by the students, and for the students. Our student writers, photographers, artists, and web managers are committed to the 60-year tradition of journalistic excellence and issue-oriented critical thinking.</p>
+					<!-- Social Media Links/Icons -->
+					<ul class="nav">
+						<li class="nav-item">
+							<a href="https://facebook.com/thelasallian" class="nav-link ps-lg-0"><i class="bi-facebook aria-label="Facebook"></i></a>
+						</li>
+						<li class="nav-item">
+							<a href="https://twitter.com/thelasallian" class="nav-link"><i class="bi-twitter" aria-label="Twitter"></i></a>
+						</li>
+						<li class="nav-item">
+							<a href="https://instagram.com/thelasallian" class="nav-link"><i class="bi-instagram" aria-label="Instagram"></i></a>
+						</li>
+						<li class="nav-item">
+							<a href="https://t.me/joinchat/BIPblhaXuBk3ZTNl" class="nav-link"><i class="bi-telegram" aria-label="Telegram"></i></a>
+						</li>
+						<li class="nav-item">
+							<a href="mailto:info@thelasallian.com" class="nav-link"><i class="bi-envelope-fill" aria-label="Email"></i></a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
