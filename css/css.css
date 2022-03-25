@@ -49,11 +49,11 @@ header {
     border: 2px solid blue;
 }
 
+/* Footer */
 footer {
     background: linear-gradient(45deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0)),
                 url('../assets/footer-background.png') center -8rem;
     background-size: cover;
-    color: #003300;
 }
 
 @media only screen and (max-width: 845px) {
@@ -63,7 +63,12 @@ footer {
     }
 }
 
+/* "The LaSallian" Bold Text in Footer and Icons */
+footer strong, footer .nav-item i {
+    color: #003300;
+}
 
+/* TLS Star in Footer */
 .footer-logo {
     width: 78px;
 }
