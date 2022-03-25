@@ -50,11 +50,11 @@
 	<footer class="py-5">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6 col-sm-12">
+				<div class="col-lg-6 col-sm-12 d-flex flex-column align-items-center align-items-lg-start">
 					<!-- Logo -->
 					<img src="assets/tls-star.svg" alt="The LaSallian Star" class="footer-logo mb-4">
 					<!-- Footer Text -->
-					<p class="footer-description mb-3"><strong>The LaSallian</strong> is the official student publication of De La Salle University. It is of the students, by the students, and for the students. Our student writers, photographers, artists, and web managers are committed to the 60-year tradition of journalistic excellence and issue-oriented critical thinking.</p>
+					<p class="footer-description"><strong>The LaSallian</strong> is the official student publication of De La Salle University. It is of the students, by the students, and for the students. Our student writers, photographers, artists, and web managers are committed to the 60-year tradition of journalistic excellence and issue-oriented critical thinking.</p>
 					<!-- Social Media Links/Icons -->
 					<ul class="nav">
 						<li class="nav-item">
