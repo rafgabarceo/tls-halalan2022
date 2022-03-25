@@ -56,6 +56,14 @@ footer {
     color: #003300;
 }
 
+@media only screen and (max-width: 845px) {
+    footer {
+        /* Stops background-image from resizing on smaller screens */
+        background-size: 1000px; 
+    }
+}
+
+
 .footer-logo {
     width: 78px;
 }
