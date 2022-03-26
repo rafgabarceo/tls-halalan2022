@@ -60,6 +60,42 @@
 					<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
 						Pres
 
+						<div class="row row-cols-1 row-cols-md-2">
+							<div class="col">
+								<div class="card">
+									<div class="row g-0">
+										<div class="col-5 col-sm-4 col-lg-5 bg-primary">
+											
+										</div>
+										<div class="col-7 col-sm-8 col-lg-7">
+											<div class="card-body">
+												<h5 class="card-title">Title</h5>
+												<p class="card-text">Text</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="card">Soluta consequatur velit ab ullam!</div>
+							</div>
+							<div class="col">
+								<div class="card">Sed ipsa molestiae recusandae mollitia.</div>
+							</div>
+							<div class="col">
+								<div class="card">Dicta esse veniam eaque illo.</div>
+							</div>
+							<div class="col">
+								<div class="card">Iure aspernatur tenetur laudantium accusamus?</div>
+							</div>
+							<div class="col">
+								<div class="card">Animi sed inventore sapiente quo.</div>
+							</div>
+							<div class="col">
+								<div class="card">Corrupti amet quos cum minima.</div>
+							</div>
+						</div>
+
 					</div>
 
 					<!-- Vice Presidentiables -->
@@ -67,7 +103,7 @@
 						VP
 
 					</div>
-					
+
 					<!-- Senatoriables -->
 					<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
 						Sen
