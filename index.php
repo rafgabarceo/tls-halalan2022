@@ -50,7 +50,7 @@
 	<footer class="py-5">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6 col-sm-12 d-flex flex-column align-items-center align-items-lg-start">
+				<div class="col-lg-6 col-sm-12 d-flex flex-column align-items-center align-items-lg-start text-center text-lg-start">
 					<!-- Logo -->
 					<img src="assets/tls-star.svg" alt="The LaSallian Star" class="footer-logo mb-4">
 					<!-- Footer Text -->
