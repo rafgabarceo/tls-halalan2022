@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+	<?php require_once("php/rest.php")?> <!-- Execute php rest script -->
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
