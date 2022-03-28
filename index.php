@@ -59,13 +59,13 @@
 
 					<!-- Presidentiables -->
 					<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-						<div class="row row-cols-1 row-cols-md-2">
+						<div class="row row-cols-1 row-cols-md-2 g-2">
 								<!-- All Presidential Cards Start Here  -->
 
 								<!-- Card n  -->
 								<div class="col">
 									<a href="#" target="_blank">
-										<div class="card mb-4">
+										<div class="card">
 											<div class="row g-0">
 												<div class="col-5 col-sm-4 col-lg-5 p-2">
 													<img src="https://pbs.twimg.com/media/FONWMy5agAA5xso?format=jpg&name=large" alt="" class="card-img highlight-img">
@@ -84,7 +84,26 @@
 								<!-- Card n  -->
 								<div class="col">
 									<a href="#" target="_blank">
-										<div class="card mb-4">
+										<div class="card">
+											<div class="row g-0">
+												<div class="col-5 col-sm-4 col-lg-5 p-2">
+													<img src="https://pbs.twimg.com/media/FONWMy5agAA5xso?format=jpg&name=large" alt="" class="card-img highlight-img">
+												</div>
+												<div class="col-7 col-sm-8 col-lg-7 d-flex">
+													<div class="card-body d-flex flex-column justify-content-center">
+														<h5 class="card-title">Debate/Forum/Interview Title</h5>
+														<p class="card-text">Date Broadcasted</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								
+								<!-- Card n  -->
+								<div class="col">
+									<a href="#" target="_blank">
+										<div class="card">
 											<div class="row g-0">
 												<div class="col-5 col-sm-4 col-lg-5 p-2">
 													<img src="https://pbs.twimg.com/media/FONWMy5agAA5xso?format=jpg&name=large" alt="" class="card-img highlight-img">
@@ -103,7 +122,7 @@
 								<!-- Card n  -->
 								<div class="col">
 									<a href="#" target="_blank">
-										<div class="card mb-4">
+										<div class="card">
 											<div class="row g-0">
 												<div class="col-5 col-sm-4 col-lg-5 p-2">
 													<img src="https://pbs.twimg.com/media/FONWMy5agAA5xso?format=jpg&name=large" alt="" class="card-img highlight-img">
@@ -122,26 +141,7 @@
 								<!-- Card n  -->
 								<div class="col">
 									<a href="#" target="_blank">
-										<div class="card mb-4">
-											<div class="row g-0">
-												<div class="col-5 col-sm-4 col-lg-5 p-2">
-													<img src="https://pbs.twimg.com/media/FMg1S-gaUAA786s?format=jpg&name=large" alt="" class="card-img highlight-img">
-												</div>
-												<div class="col-7 col-sm-8 col-lg-7 d-flex">
-													<div class="card-body d-flex flex-column justify-content-center">
-														<h5 class="card-title">Debate/Forum/Interview Title</h5>
-														<p class="card-text">Date Broadcasted</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</a>
-								</div>
-
-								<!-- Card n  -->
-								<div class="col">
-									<a href="#" target="_blank">
-										<div class="card mb-4">
+										<div class="card">
 											<div class="row g-0">
 												<div class="col-5 col-sm-4 col-lg-5 p-2">
 													<img src="https://pbs.twimg.com/media/FONWMy5agAA5xso?format=jpg&name=large" alt="" class="card-img highlight-img">
@@ -156,7 +156,6 @@
 										</div>
 									</a>
 								</div>
-
 
 								<!-- All Presidential Cards End Here -->
 						</div>
@@ -165,13 +164,13 @@
 
 					<!-- Vice Presidentiables -->
 					<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-					<div class="row row-cols-1 row-cols-md-2">
-							<!-- All Presidential Cards Start Here  -->
+					<div class="row row-cols-1 row-cols-md-2 g-2">
+						<!-- All VP Cards Start Here  -->
 
-							<!-- Card n  -->
-							<div class="col">
+						<!-- Card n  -->
+						<div class="col">
 								<a href="#" target="_blank">
-									<div class="card mb-4">
+									<div class="card">
 										<div class="row g-0">
 											<div class="col-5 col-sm-4 col-lg-5 p-2">
 												<img src="https://pbs.twimg.com/media/FMg1S-gaUAA786s?format=jpg&name=large" alt="" class="card-img highlight-img">
@@ -190,7 +189,26 @@
 							<!-- Card n  -->
 							<div class="col">
 								<a href="#" target="_blank">
-									<div class="card mb-4">
+									<div class="card">
+										<div class="row g-0">
+											<div class="col-5 col-sm-4 col-lg-5 p-2">
+												<img src="https://pbs.twimg.com/media/FMg1S-gaUAA786s?format=jpg&name=large" alt="" class="card-img highlight-img">
+											</div>
+											<div class="col-7 col-sm-8 col-lg-7 d-flex">
+												<div class="card-body d-flex flex-column justify-content-center">
+													<h5 class="card-title">Debate/Forum/Interview Title</h5>
+													<p class="card-text">Date Broadcasted</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							
+							<!-- Card n  -->
+							<div class="col">
+								<a href="#" target="_blank">
+									<div class="card">
 										<div class="row g-0">
 											<div class="col-5 col-sm-4 col-lg-5 p-2">
 												<img src="https://pbs.twimg.com/media/FMg1S-gaUAA786s?format=jpg&name=large" alt="" class="card-img highlight-img">
@@ -209,7 +227,7 @@
 							<!-- Card n  -->
 							<div class="col">
 								<a href="#" target="_blank">
-									<div class="card mb-4">
+									<div class="card">
 										<div class="row g-0">
 											<div class="col-5 col-sm-4 col-lg-5 p-2">
 												<img src="https://pbs.twimg.com/media/FMg1S-gaUAA786s?format=jpg&name=large" alt="" class="card-img highlight-img">
@@ -228,26 +246,7 @@
 							<!-- Card n  -->
 							<div class="col">
 								<a href="#" target="_blank">
-									<div class="card mb-4">
-										<div class="row g-0">
-											<div class="col-5 col-sm-4 col-lg-5 p-2">
-												<img src="https://pbs.twimg.com/media/FMg1S-gaUAA786s?format=jpg&name=large" alt="" class="card-img highlight-img">
-											</div>
-											<div class="col-7 col-sm-8 col-lg-7 d-flex">
-												<div class="card-body d-flex flex-column justify-content-center">
-													<h5 class="card-title">Debate/Forum/Interview Title</h5>
-													<p class="card-text">Date Broadcasted</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-
-							<!-- Card n  -->
-							<div class="col">
-								<a href="#" target="_blank">
-									<div class="card mb-4">
+									<div class="card">
 										<div class="row g-0">
 											<div class="col-5 col-sm-4 col-lg-5 p-2">
 												<img src="https://pbs.twimg.com/media/FMg1S-gaUAA786s?format=jpg&name=large" alt="" class="card-img highlight-img">
