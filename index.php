@@ -38,7 +38,7 @@
 		<!-- Second Row -->
 		<div class="row">
             <!-- Debate, Forum, Interview Highlights -->
-			<section class="col">
+			<section id="highlights" class="col">
 				Highlights
 				
 				<!-- Presidentiables, etc. Buttons -->
