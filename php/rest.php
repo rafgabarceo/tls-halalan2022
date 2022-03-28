@@ -2,7 +2,7 @@
     if(session_status() == PHP_SESSION_NONE){
         session_start();
         $_SESSION["TIME_ACCESSED"] = time();
-        $_SESSION["ARTICLE_INFO"] = fetchInfo("https://thelasallian.com/wp-json/wp/v2/posts?tags=2090&?_fields=date,guid,title,excerpt,authors");
+        $_SESSION["ARTICLE_INFO"] = fetchInfo("https://thelasallian.com/wp-json/wp/v2/posts?tags=2180&?_fields=date,guid,title,excerpt,authors");
     } else if(session_status() == PHP_SESSION_ACTIVE){
         $dateInitiallyAccessed = new DateTime($_SESSION["TIME_ACCESSED"]);
         $dateNow = new DateTime(time());
@@ -38,6 +38,10 @@ function fetchInfo($url, $httpReq = 'GET'){
 
     curl_close($curl);
     return json_decode($response, true);
+}
+
+function twitterFetch($url, $httpReq = 'GET'){
+    // TODO: cURL implementation to Twitter API. Refer to docs https://developer.twitter.com/en/docs/twitter-api/getting-started/getting-access-to-the-twitter-api
 }
 
 ?>
