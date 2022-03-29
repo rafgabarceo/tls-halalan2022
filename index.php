@@ -39,7 +39,9 @@
 		<div class="row">
             <!-- Debate, Forum, Interview Highlights -->
 			<section id="highlights" class="col">
-				Highlights
+				<div class="section-heading-container">
+					<h4>Debate, Forum, & Interview Highlights</h4>
+				</div>
 				
 				<!-- Presidentiables, etc. Buttons -->
 				<ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
@@ -79,7 +81,7 @@
 												</div>
 												<div class="col-7 col-sm-8 col-lg-7 d-flex">
 													<div class="card-body d-flex flex-column justify-content-center">
-														<h5 class="card-title fw-bold"><?php echo $highlightTitle; ?></h5>
+														<h5 class="card-title"><?php echo $highlightTitle; ?></h5>
 														<p class="card-text"><?php echo $highlightDate; ?></p>
 													</div>
 												</div>
@@ -115,7 +117,7 @@
 												</div>
 												<div class="col-7 col-sm-8 col-lg-7 d-flex">
 													<div class="card-body d-flex flex-column justify-content-center">
-														<h5 class="card-title fw-bold"><?php echo $highlightTitle; ?></h5>
+														<h5 class="card-title"><?php echo $highlightTitle; ?></h5>
 														<p class="card-text"><?php echo $highlightDate; ?></p>
 													</div>
 												</div>
@@ -152,7 +154,7 @@
 												</div>
 												<div class="col-7 col-sm-8 col-lg-7 d-flex">
 													<div class="card-body d-flex flex-column justify-content-center">
-														<h5 class="card-title fw-bold"><?php echo $highlightTitle; ?></h5>
+														<h5 class="card-title"><?php echo $highlightTitle; ?></h5>
 														<p class="card-text"><?php echo $highlightDate; ?></p>
 													</div>
 												</div>
