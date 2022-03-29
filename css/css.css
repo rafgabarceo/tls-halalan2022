@@ -1,3 +1,14 @@
+:root {
+    --red: #B42828;
+    --light-red: #FBEEEE;
+    --blue: #165D8B;
+    --light-blue: #EBF6FF;
+    --yellow: #DC8E20;
+    --light-yellow: #FFF3E2;
+    --brown: #462C08;
+    --green: #003300;
+}
+
 * {
     font-family: 'Red Hat Text';
 }
@@ -72,7 +83,7 @@ footer {
 
 /* "The LaSallian" Bold Text in Footer and Icons */
 footer strong, footer .nav-item i {
-    color: #003300;
+    color: var(--green);
 }
 
 /* TLS Star in Footer */
