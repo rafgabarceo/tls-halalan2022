@@ -56,215 +56,76 @@
 
 				<!-- Main Highlights Container -->
 				<div class="tab-content" id="pills-tabContent">
-
 					<!-- Presidentiables -->
 					<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
 						<div class="row row-cols-1 row-cols-md-2 g-2">
-							<!-- All Presidential Cards Start Here  -->
 
-							<!-- Card n  -->
-							<div class="col">
-								<a href="#" target="_blank">
-									<div class="card">
-										<div class="row g-0">
-											<div class="col-5 col-sm-4 col-lg-5 p-2">
-												<img src="https://pbs.twimg.com/media/FONWMy5agAA5xso?format=jpg&name=large" alt="" class="card-img highlight-img">
-											</div>
-											<div class="col-7 col-sm-8 col-lg-7 d-flex">
-												<div class="card-body d-flex flex-column justify-content-center">
-													<h5 class="card-title">Debate/Forum/Interview Title</h5>
-													<p class="card-text">Date Broadcasted</p>
+							<!-- PHP Loop to Render President Cards-->
+							<?php
+								$debatesList = json_decode( file_get_contents("highlights-info/president-highights.json"), true );
+
+								foreach($debatesList as $item) { //foreach element in $arr
+									$highlightTitle = $item['title']; 
+									$highlightDate = $item['date']; 
+									$highlightVisual = $item['visual']; 
+									$highlightURL = $item["url"];
+							?>
+								<div class="col">
+									<a href="<?php echo $highlightURL; ?>" target="_blank">
+										<div class="card">
+											<div class="row g-0">
+												<div class="col-5 col-sm-4 col-lg-5 p-2">
+													<img src="<?php echo $highlightVisual; ?>" alt="" class="card-img highlight-img">
+												</div>
+												<div class="col-7 col-sm-8 col-lg-7 d-flex">
+													<div class="card-body d-flex flex-column justify-content-center">
+														<h5 class="card-title"><?php echo $highlightTitle; ?></h5>
+														<p class="card-text"><?php echo $highlightDate; ?></p>
+													</div>
 												</div>
 											</div>
 										</div>
-									</div>
-								</a>
-							</div>
+									</a>
+								</div>
+							<?php } ?>
 
-							<!-- Card n  -->
-							<div class="col">
-								<a href="#" target="_blank">
-									<div class="card">
-										<div class="row g-0">
-											<div class="col-5 col-sm-4 col-lg-5 p-2">
-												<img src="https://pbs.twimg.com/media/FONWMy5agAA5xso?format=jpg&name=large" alt="" class="card-img highlight-img">
-											</div>
-											<div class="col-7 col-sm-8 col-lg-7 d-flex">
-												<div class="card-body d-flex flex-column justify-content-center">
-													<h5 class="card-title">Debate/Forum/Interview Title</h5>
-													<p class="card-text">Date Broadcasted</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-							
-							<!-- Card n  -->
-							<div class="col">
-								<a href="#" target="_blank">
-									<div class="card">
-										<div class="row g-0">
-											<div class="col-5 col-sm-4 col-lg-5 p-2">
-												<img src="https://pbs.twimg.com/media/FONWMy5agAA5xso?format=jpg&name=large" alt="" class="card-img highlight-img">
-											</div>
-											<div class="col-7 col-sm-8 col-lg-7 d-flex">
-												<div class="card-body d-flex flex-column justify-content-center">
-													<h5 class="card-title">Debate/Forum/Interview Title</h5>
-													<p class="card-text">Date Broadcasted</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-
-							<!-- Card n  -->
-							<div class="col">
-								<a href="#" target="_blank">
-									<div class="card">
-										<div class="row g-0">
-											<div class="col-5 col-sm-4 col-lg-5 p-2">
-												<img src="https://pbs.twimg.com/media/FONWMy5agAA5xso?format=jpg&name=large" alt="" class="card-img highlight-img">
-											</div>
-											<div class="col-7 col-sm-8 col-lg-7 d-flex">
-												<div class="card-body d-flex flex-column justify-content-center">
-													<h5 class="card-title">Debate/Forum/Interview Title</h5>
-													<p class="card-text">Date Broadcasted</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-
-							<!-- Card n  -->
-							<div class="col">
-								<a href="#" target="_blank">
-									<div class="card">
-										<div class="row g-0">
-											<div class="col-5 col-sm-4 col-lg-5 p-2">
-												<img src="https://pbs.twimg.com/media/FONWMy5agAA5xso?format=jpg&name=large" alt="" class="card-img highlight-img">
-											</div>
-											<div class="col-7 col-sm-8 col-lg-7 d-flex">
-												<div class="card-body d-flex flex-column justify-content-center">
-													<h5 class="card-title">Debate/Forum/Interview Title</h5>
-													<p class="card-text">Date Broadcasted</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-
-							<!-- All Presidential Cards End Here -->
 						</div>
-
 					</div>
 
 					<!-- Vice Presidentiables -->
 					<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
 						<div class="row row-cols-1 row-cols-md-2 g-2">
-							<!-- All VP Cards Start Here  -->
 
-							<!-- Card n  -->
-							<div class="col">
-								<a href="#" target="_blank">
-									<div class="card">
-										<div class="row g-0">
-											<div class="col-5 col-sm-4 col-lg-5 p-2">
-												<img src="https://pbs.twimg.com/media/FMg1S-gaUAA786s?format=jpg&name=large" alt="" class="card-img highlight-img">
-											</div>
-											<div class="col-7 col-sm-8 col-lg-7 d-flex">
-												<div class="card-body d-flex flex-column justify-content-center">
-													<h5 class="card-title">Debate/Forum/Interview Title</h5>
-													<p class="card-text">Date Broadcasted</p>
+							<!-- PHP Loop to Render VP Cards -->
+							<?php
+								$debatesList = json_decode( file_get_contents("highlights-info/vp-highlights.json"), true );
+
+								foreach($debatesList as $item) { //foreach element in $arr
+									$highlightTitle = $item['title']; 
+									$highlightDate = $item['date']; 
+									$highlightVisual = $item['visual']; 
+									$highlightURL = $item["url"];
+							?>
+								<div class="col">
+									<a href="<?php echo $highlightURL; ?>" target="_blank">
+										<div class="card">
+											<div class="row g-0">
+												<div class="col-5 col-sm-4 col-lg-5 p-2">
+													<img src="<?php echo $highlightVisual; ?>" alt="" class="card-img highlight-img">
+												</div>
+												<div class="col-7 col-sm-8 col-lg-7 d-flex">
+													<div class="card-body d-flex flex-column justify-content-center">
+														<h5 class="card-title"><?php echo $highlightTitle; ?></h5>
+														<p class="card-text"><?php echo $highlightDate; ?></p>
+													</div>
 												</div>
 											</div>
 										</div>
-									</div>
-								</a>
-							</div>
+									</a>
+								</div>
+							<?php } ?>
 
-							<!-- Card n  -->
-							<div class="col">
-								<a href="#" target="_blank">
-									<div class="card">
-										<div class="row g-0">
-											<div class="col-5 col-sm-4 col-lg-5 p-2">
-												<img src="https://pbs.twimg.com/media/FMg1S-gaUAA786s?format=jpg&name=large" alt="" class="card-img highlight-img">
-											</div>
-											<div class="col-7 col-sm-8 col-lg-7 d-flex">
-												<div class="card-body d-flex flex-column justify-content-center">
-													<h5 class="card-title">Debate/Forum/Interview Title</h5>
-													<p class="card-text">Date Broadcasted</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-								
-							<!-- Card n  -->
-							<div class="col">
-								<a href="#" target="_blank">
-									<div class="card">
-										<div class="row g-0">
-											<div class="col-5 col-sm-4 col-lg-5 p-2">
-												<img src="https://pbs.twimg.com/media/FMg1S-gaUAA786s?format=jpg&name=large" alt="" class="card-img highlight-img">
-											</div>
-											<div class="col-7 col-sm-8 col-lg-7 d-flex">
-												<div class="card-body d-flex flex-column justify-content-center">
-													<h5 class="card-title">Debate/Forum/Interview Title</h5>
-													<p class="card-text">Date Broadcasted</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-
-							<!-- Card n  -->
-							<div class="col">
-								<a href="#" target="_blank">
-									<div class="card">
-										<div class="row g-0">
-											<div class="col-5 col-sm-4 col-lg-5 p-2">
-												<img src="https://pbs.twimg.com/media/FMg1S-gaUAA786s?format=jpg&name=large" alt="" class="card-img highlight-img">
-											</div>
-											<div class="col-7 col-sm-8 col-lg-7 d-flex">
-												<div class="card-body d-flex flex-column justify-content-center">
-													<h5 class="card-title">Debate/Forum/Interview Title</h5>
-													<p class="card-text">Date Broadcasted</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-
-							<!-- Card n  -->
-							<div class="col">
-								<a href="#" target="_blank">
-									<div class="card">
-										<div class="row g-0">
-											<div class="col-5 col-sm-4 col-lg-5 p-2">
-												<img src="https://pbs.twimg.com/media/FMg1S-gaUAA786s?format=jpg&name=large" alt="" class="card-img highlight-img">
-											</div>
-											<div class="col-7 col-sm-8 col-lg-7 d-flex">
-												<div class="card-body d-flex flex-column justify-content-center">
-													<h5 class="card-title">Debate/Forum/Interview Title</h5>
-													<p class="card-text">Date Broadcasted</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-
-							<!-- All VP Cards End Here -->
 						</div>
-
 					</div>
 
 					<!-- Senatoriables -->
@@ -272,106 +133,38 @@
 						<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2">
 							<!-- All Senator Cards Start Here -->
 
-							<!-- Card n  -->
-							<div class="col">
-								<a href="#" target="_blank">
-									<div class="card">
-										<div class="row g-0">
-											<div class="col-5 col-sm-4 col-lg-5 p-2">
-												<img src="https://pbs.twimg.com/media/FKWHj3JaUAQ604w?format=jpg&name=large" alt="" class="card-img highlight-img">
-											</div>
-											<div class="col-7 col-sm-8 col-lg-7 d-flex">
-												<div class="card-body d-flex flex-column justify-content-center">
-													<h5 class="card-title">Debate/Forum/Interview Title</h5>
-													<p class="card-text">Date Broadcasted</p>
+							<!-- PHP Loop to Render Senator Cards-->
+							<?php
+								$debatesList = json_decode( file_get_contents("highlights-info/senator-highlights.json"), true );
+
+								foreach($debatesList as $item) { //foreach element in $arr
+									$highlightTitle = $item['title']; 
+									$highlightDate = $item['date']; 
+									$highlightVisual = $item['visual']; 
+									$highlightURL = $item["url"];
+							?>
+								<div class="col">
+									<a href="<?php echo $highlightURL; ?>" target="_blank">
+										<div class="card">
+											<div class="row g-0">
+												<div class="col-5 col-sm-4 col-lg-5 p-2">
+													<img src="<?php echo $highlightVisual; ?>" alt="" class="card-img highlight-img">
+												</div>
+												<div class="col-7 col-sm-8 col-lg-7 d-flex">
+													<div class="card-body d-flex flex-column justify-content-center">
+														<h5 class="card-title"><?php echo $highlightTitle; ?></h5>
+														<p class="card-text"><?php echo $highlightDate; ?></p>
+													</div>
 												</div>
 											</div>
 										</div>
-									</div>
-								</a>
-							</div>
+									</a>
+								</div>
+							<?php } ?>
 
-							<!-- Card n  -->
-							<div class="col">
-								<a href="#" target="_blank">
-									<div class="card">
-										<div class="row g-0">
-											<div class="col-5 col-sm-4 col-lg-5 p-2">
-												<img src="https://pbs.twimg.com/media/FKWHj3JaUAQ604w?format=jpg&name=large" alt="" class="card-img highlight-img">
-											</div>
-											<div class="col-7 col-sm-8 col-lg-7 d-flex">
-												<div class="card-body d-flex flex-column justify-content-center">
-													<h5 class="card-title">Debate/Forum/Interview Title</h5>
-													<p class="card-text">Date Broadcasted</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-
-							<!-- Card n  -->
-							<div class="col">
-								<a href="#" target="_blank">
-									<div class="card">
-										<div class="row g-0">
-											<div class="col-5 col-sm-4 col-lg-5 p-2">
-												<img src="https://pbs.twimg.com/media/FKWHj3JaUAQ604w?format=jpg&name=large" alt="" class="card-img highlight-img">
-											</div>
-											<div class="col-7 col-sm-8 col-lg-7 d-flex">
-												<div class="card-body d-flex flex-column justify-content-center">
-													<h5 class="card-title">Debate/Forum/Interview Title</h5>
-													<p class="card-text">Date Broadcasted</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-
-							<!-- Card n  -->
-							<div class="col">
-								<a href="#" target="_blank">
-									<div class="card">
-										<div class="row g-0">
-											<div class="col-5 col-sm-4 col-lg-5 p-2">
-												<img src="https://pbs.twimg.com/media/FKWHj3JaUAQ604w?format=jpg&name=large" alt="" class="card-img highlight-img">
-											</div>
-											<div class="col-7 col-sm-8 col-lg-7 d-flex">
-												<div class="card-body d-flex flex-column justify-content-center">
-													<h5 class="card-title">Debate/Forum/Interview Title</h5>
-													<p class="card-text">Date Broadcasted</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-
-							<!-- Card n  -->
-							<div class="col">
-								<a href="#" target="_blank">
-									<div class="card">
-										<div class="row g-0">
-											<div class="col-5 col-sm-4 col-lg-5 p-2">
-												<img src="https://pbs.twimg.com/media/FKWHj3JaUAQ604w?format=jpg&name=large" alt="" class="card-img highlight-img">
-											</div>
-											<div class="col-7 col-sm-8 col-lg-7 d-flex">
-												<div class="card-body d-flex flex-column justify-content-center">
-													<h5 class="card-title">Debate/Forum/Interview Title</h5>
-													<p class="card-text">Date Broadcasted</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-
-							
-
-							<!-- All Senator Cards End Here -->
 						</div>
 					</div>
+
 				</div>
 
 
