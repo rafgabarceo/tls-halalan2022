@@ -81,6 +81,22 @@ header {
     font-size: .9em;
 }
 
+.section-heading-container {
+    border-color: var(--red) !important;
+    color: var(--red);
+}
+
+.section-heading-container .nav-link {
+    color: var(--red);
+    font-weight: 500;
+}
+
+.section-heading-container .nav-link.active {
+    color: var(--red);
+    background-color: #fff;
+    text-decoration: underline;
+}
+
 /* Footer */
 footer {
     background: linear-gradient(45deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0)),
