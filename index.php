@@ -72,14 +72,14 @@
 							?>
 								<div class="col">
 									<a href="<?php echo $highlightURL; ?>" target="_blank">
-										<div class="card">
+										<div class="card border-0">
 											<div class="row g-0">
 												<div class="col-5 col-sm-4 col-lg-5 p-2">
 													<img src="<?php echo $highlightVisual; ?>" alt="" class="card-img highlight-img">
 												</div>
 												<div class="col-7 col-sm-8 col-lg-7 d-flex">
 													<div class="card-body d-flex flex-column justify-content-center">
-														<h5 class="card-title"><?php echo $highlightTitle; ?></h5>
+														<h5 class="card-title fw-bold"><?php echo $highlightTitle; ?></h5>
 														<p class="card-text"><?php echo $highlightDate; ?></p>
 													</div>
 												</div>
@@ -108,14 +108,14 @@
 							?>
 								<div class="col">
 									<a href="<?php echo $highlightURL; ?>" target="_blank">
-										<div class="card">
+										<div class="card border-0">
 											<div class="row g-0">
 												<div class="col-5 col-sm-4 col-lg-5 p-2">
 													<img src="<?php echo $highlightVisual; ?>" alt="" class="card-img highlight-img">
 												</div>
 												<div class="col-7 col-sm-8 col-lg-7 d-flex">
 													<div class="card-body d-flex flex-column justify-content-center">
-														<h5 class="card-title"><?php echo $highlightTitle; ?></h5>
+														<h5 class="card-title fw-bold"><?php echo $highlightTitle; ?></h5>
 														<p class="card-text"><?php echo $highlightDate; ?></p>
 													</div>
 												</div>
@@ -145,14 +145,14 @@
 							?>
 								<div class="col">
 									<a href="<?php echo $highlightURL; ?>" target="_blank">
-										<div class="card">
+										<div class="card border-0">
 											<div class="row g-0">
 												<div class="col-5 col-sm-4 col-lg-5 p-2">
 													<img src="<?php echo $highlightVisual; ?>" alt="" class="card-img highlight-img">
 												</div>
 												<div class="col-7 col-sm-8 col-lg-7 d-flex">
 													<div class="card-body d-flex flex-column justify-content-center">
-														<h5 class="card-title"><?php echo $highlightTitle; ?></h5>
+														<h5 class="card-title fw-bold"><?php echo $highlightTitle; ?></h5>
 														<p class="card-text"><?php echo $highlightDate; ?></p>
 													</div>
 												</div>
