@@ -39,22 +39,24 @@
 		<div class="row">
             <!-- Debate, Forum, Interview Highlights -->
 			<section id="highlights" class="col">
-				<div class="section-heading-container">
-					<h4>Debate, Forum, & Interview Highlights</h4>
+				<div class="section-heading-container border-top border-4 py-2 d-flex flex-column flex-lg-row justify-content-lg-between align-items-lg-center">
+					<h4 class="m-0">Debate, Forum, & Interview Highlights</h4>
+
+					<!-- Presidentiables, etc. Buttons -->
+					<ul class="nav nav-pills align-self-center" id="pills-tab" role="tablist">
+						<li class="nav-item" role="presentation">
+							<button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Presidentiables</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Vice Presidentiables</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link pe-lg-0" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Senatoriables</button>
+						</li>
+					</ul>
 				</div>
 				
-				<!-- Presidentiables, etc. Buttons -->
-				<ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
-					<li class="nav-item" role="presentation">
-						<button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Presidentiables</button>
-					</li>
-					<li class="nav-item" role="presentation">
-						<button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Vice Presidentiables</button>
-					</li>
-					<li class="nav-item" role="presentation">
-						<button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Senatoriables</button>
-					</li>
-				</ul>
+				
 
 				<!-- Main Highlights Container -->
 				<div class="tab-content" id="pills-tabContent">
