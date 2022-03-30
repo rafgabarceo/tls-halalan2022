@@ -62,10 +62,8 @@ header {
 }
 
 /* Highlights Section */
-.highlight-img {
-    width: 100%;
-    height: 8rem;
-    object-fit: cover;
+#highlights {
+    color: var(--red);
 }
 
 #highlights .card {
@@ -83,7 +81,6 @@ header {
 
 .section-heading-container {
     border-color: var(--red) !important;
-    color: var(--red);
 }
 
 .section-heading-container .nav-link {
@@ -95,6 +92,16 @@ header {
     color: var(--red);
     background-color: #fff;
     text-decoration: underline;
+}
+
+.highlight-img {
+    width: 100%;
+    height: 8rem;
+    object-fit: cover;
+}
+
+#pills-senator .highlight-img {
+    object-position: bottom;
 }
 
 /* Footer */
