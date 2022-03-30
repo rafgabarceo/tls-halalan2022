@@ -45,13 +45,13 @@
 					<!-- Presidentiables, etc. Buttons -->
 					<ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
 						<li class="nav-item mx-3" role="presentation">
-							<button class="nav-link p-0 active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Presidentiables</button>
+							<button class="nav-link p-0 active" id="pills-pres-tab" data-bs-toggle="pill" data-bs-target="#pills-pres" type="button" role="tab" aria-controls="pills-pres" aria-selected="true">Presidentiables</button>
 						</li>
 						<li class="nav-item mx-3" role="presentation">
-							<button class="nav-link p-0" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Vice Presidentiables</button>
+							<button class="nav-link p-0" id="pills-vp-tab" data-bs-toggle="pill" data-bs-target="#pills-vp" type="button" role="tab" aria-controls="pills-vp" aria-selected="false">Vice Presidentiables</button>
 						</li>
 						<li class="nav-item mx-3 me-lg-0" role="presentation">
-							<button class="nav-link p-0" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Senatoriables</button>
+							<button class="nav-link p-0" id="pills-senator-tab" data-bs-toggle="pill" data-bs-target="#pills-senator" type="button" role="tab" aria-controls="pills-senator" aria-selected="false">Senatoriables</button>
 						</li>
 					</ul>
 				</div>
@@ -61,7 +61,7 @@
 				<!-- Main Highlights Container -->
 				<div class="tab-content" id="pills-tabContent">
 					<!-- Presidentiables -->
-					<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+					<div class="tab-pane fade show active" id="pills-pres" role="tabpanel" aria-labelledby="pills-pres-tab">
 						<div class="row row-cols-1 row-cols-md-2 g-2">
 
 							<!-- PHP Loop to Render President Cards-->
@@ -97,7 +97,7 @@
 					</div>
 
 					<!-- Vice Presidentiables -->
-					<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+					<div class="tab-pane fade" id="pills-vp" role="tabpanel" aria-labelledby="pills-vp-tab">
 						<div class="row row-cols-1 row-cols-md-2 g-2">
 
 							<!-- PHP Loop to Render VP Cards -->
@@ -133,7 +133,7 @@
 					</div>
 
 					<!-- Senatoriables -->
-					<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+					<div class="tab-pane fade" id="pills-senator" role="tabpanel" aria-labelledby="pills-senator-tab">
 
 						<!-- Forums -->
 						<h6 class="mt-4 mb-3 fst-italic">CNN Philippines Senatorial Forums</h6>
