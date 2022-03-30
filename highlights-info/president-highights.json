@@ -1,26 +1,38 @@
 [
-    {
-        "title": "President",
-        "date": "Feb. 27, 2022",
-        "visual": "https://media.interaksyon.com/wp-content/uploads/2021/06/former-president-noynoy-aquino-malacanang-640x427.jpg",
-        "url": "#"
-    },
-    {
-        "title": "President",
-        "date": "Feb. 27, 2022",
-        "visual": "https://media.interaksyon.com/wp-content/uploads/2021/06/former-president-noynoy-aquino-malacanang-640x427.jpg",
-        "url": "#"
-    },
-    {
-        "title": "President",
-        "date": "Feb. 27, 2022",
-        "visual": "https://media.interaksyon.com/wp-content/uploads/2021/06/former-president-noynoy-aquino-malacanang-640x427.jpg",
-        "url": "#"
-    },
-    {
-        "title": "Pnoy!",
-        "date": "Feb. 27, 2022",
-        "visual": "https://media.interaksyon.com/wp-content/uploads/2021/06/former-president-noynoy-aquino-malacanang-640x427.jpg",
-        "url": "#"
-    }
-]
+  {
+    "title": "PiliPinas Debates 2022: The Turning Point",
+    "date": "March 19",
+    "url": "https://www.facebook.com/TheLaSallian/posts/10159538441489760",
+    "visual": "https://pbs.twimg.com/media/FONWMy5agAA5xso?format=jpg&name=large"
+  },
+  {
+    "title": "CNN Philippines Presidential Debate",
+    "date": "March 3",
+    "url": "https://www.facebook.com/TheLaSallian/posts/10159503321464760",
+    "visual": "https://pbs.twimg.com/media/FMl5SA8VgAAteL4?format=jpg&name=large"
+  },
+  {
+    "title": "SMNI Presidential Debate ",
+    "date": "February 15",
+    "url": "https://www.facebook.com/TheLaSallian/posts/10159481179659760",
+    "visual": "https://pbs.twimg.com/media/FLol_r6aIAMfW2m?format=jpg&name=large"
+  },
+  {
+    "title": "KBP Presidential Forum: Panata Sa Bayan",
+    "date": "February 5",
+    "url": "https://www.facebook.com/TheLaSallian/posts/10159464701349760",
+    "visual": "https://pbs.twimg.com/media/FKtt21DaUAArxpO?format=jpg&name=large"
+  },
+  {
+    "title": "Presidential One-On-One Interviews with Boy Abunda",
+    "date": "January 24-28",
+    "url": "https://www.facebook.com/TheLaSallian/posts/10159450376779760",
+    "visual": "https://pbs.twimg.com/media/FJ3B8kRaUAIcQIv?format=jpg&name=large"
+  },
+  {
+    "title": "The Jessica Soho Presidential Interviews",
+    "date": "January 22",
+    "url": "https://www.facebook.com/TheLaSallian/posts/10159438798679760",
+    "visual": "https://pbs.twimg.com/media/FJsyuqAacAYONxR?format=jpg&name=large"
+  }
+ ]
