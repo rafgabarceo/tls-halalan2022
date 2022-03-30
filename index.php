@@ -136,8 +136,8 @@
 					<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
 
 						<!-- Forums -->
-						<h6 class="mt-3 mb-3">CNN Philippines Senatorial Forums</h6>
-						<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2 mb-5">
+						<h6 class="mt-4 mb-3 fst-italic">CNN Philippines Senatorial Forums</h6>
+						<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2">
 
 							<!-- PHP Loop to Render Senator Cards-->
 							<?php
@@ -171,7 +171,7 @@
 						</div>
 
 						<!-- Debates -->
-						<h6 class="mb-3">Senatorial Debates</h6>
+						<h6 class="mt-4 mb-3 fst-italic">Senatorial Debates</h6>
 						<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2">
 
 							<!-- PHP Loop to Render Senator Cards-->
