@@ -134,12 +134,14 @@
 
 					<!-- Senatoriables -->
 					<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-						<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2">
-							<!-- All Senator Cards Start Here -->
+
+						<!-- Forums -->
+						<h6 class="mt-3 mb-3">CNN Philippines Senatorial Forums</h6>
+						<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2 mb-5">
 
 							<!-- PHP Loop to Render Senator Cards-->
 							<?php
-								$debatesList = json_decode( file_get_contents("highlights-info/senator-highlights.json"), true );
+								$debatesList = json_decode( file_get_contents("highlights-info/sen-forum-highlights.json"), true );
 
 								foreach($debatesList as $item) { //foreach element in $arr
 									$highlightTitle = $item['title']; 
@@ -167,6 +169,42 @@
 							<?php } ?>
 
 						</div>
+
+						<!-- Debates -->
+						<h6 class="mb-3">Senatorial Debates</h6>
+						<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2">
+
+							<!-- PHP Loop to Render Senator Cards-->
+							<?php
+								$debatesList = json_decode( file_get_contents("highlights-info/sen-debate-highlights.json"), true );
+
+								foreach($debatesList as $item) { //foreach element in $arr
+									$highlightTitle = $item['title']; 
+									$highlightDate = $item['date']; 
+									$highlightVisual = $item['visual']; 
+									$highlightURL = $item["url"];
+							?>
+								<div class="col">
+									<a href="<?php echo $highlightURL; ?>" target="_blank">
+										<div class="card border-0">
+											<div class="row g-0">
+												<div class="col-5 col-sm-4 col-lg-5 p-2">
+													<img src="<?php echo $highlightVisual; ?>" alt="" class="card-img highlight-img">
+												</div>
+												<div class="col-7 col-sm-8 col-lg-7 d-flex">
+													<div class="card-body d-flex flex-column justify-content-center">
+														<h5 class="card-title"><?php echo $highlightTitle; ?></h5>
+														<p class="card-text"><?php echo $highlightDate; ?></p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+							<?php } ?>
+
+						</div>
+
 					</div>
 
 				</div>
