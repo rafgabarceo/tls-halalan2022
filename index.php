@@ -66,7 +66,7 @@
 
 							<!-- PHP Loop to Render President Cards-->
 							<?php
-								$debatesList = json_decode( file_get_contents("highlights-info/president-highights.json"), true );
+								$debatesList = json_decode( file_get_contents("json/president-highights.json"), true );
 
 								foreach($debatesList as $item) { //foreach element in $arr
 									$highlightTitle = $item['title']; 
@@ -102,7 +102,7 @@
 
 							<!-- PHP Loop to Render VP Cards -->
 							<?php
-								$debatesList = json_decode( file_get_contents("highlights-info/vp-highlights.json"), true );
+								$debatesList = json_decode( file_get_contents("json/vp-highlights.json"), true );
 
 								foreach($debatesList as $item) { //foreach element in $arr
 									$highlightTitle = $item['title']; 
@@ -141,7 +141,7 @@
 
 							<!-- PHP Loop to Render Senator Cards-->
 							<?php
-								$debatesList = json_decode( file_get_contents("highlights-info/sen-forum-highlights.json"), true );
+								$debatesList = json_decode( file_get_contents("json/sen-forum-highlights.json"), true );
 
 								foreach($debatesList as $item) { //foreach element in $arr
 									$highlightTitle = $item['title']; 
@@ -176,7 +176,7 @@
 
 							<!-- PHP Loop to Render Senator Cards-->
 							<?php
-								$debatesList = json_decode( file_get_contents("highlights-info/sen-debate-highlights.json"), true );
+								$debatesList = json_decode( file_get_contents("json/sen-debate-highlights.json"), true );
 
 								foreach($debatesList as $item) { //foreach element in $arr
 									$highlightTitle = $item['title']; 
