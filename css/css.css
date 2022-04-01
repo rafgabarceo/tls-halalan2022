@@ -57,11 +57,25 @@ header {
         } 
 }
 
-.row > section {
+.row > section { /* Temporary border for guidance */
     border: 1px dashed blue;
 }
 
-/* Highlights Section */
+/* Common Styles for All Sections */
+section a { 
+    text-decoration: none;
+    color: inherit;
+}
+
+section .card-img {
+    object-fit: cover;
+}
+
+section .card-text {
+    font-size: .9em;
+}
+
+/* Specific Styles for Highlights Section */
 #highlights {
     color: var(--red);
 }
@@ -70,38 +84,27 @@ header {
     background-color: var(--light-red);
 }
 
-#highlights a {
-    text-decoration: none;
-    color: var(--red);
+#highlights > .sec-heading-container {
+    border-color: var(--red) !important; /* !important added to override default Bootstrap style */
 }
 
-#highlights .card-text {
-    font-size: .9em;
+#highlights > .sec-heading-container .nav-link {
+    color: var(--red); /* To override default Bootstrap style */
+    font-weight: 500; /* Bootstrap has no utility class for semibold */
 }
 
-.section-heading-container {
-    border-color: var(--red) !important;
-}
-
-.section-heading-container .nav-link {
-    color: var(--red);
-    font-weight: 500;
-}
-
-.section-heading-container .nav-link.active {
-    color: var(--red);
-    background-color: #fff;
+#highlights > .sec-heading-container .nav-link.active {
+    color: var(--red); /* To override default Bootstrap style */
+    background-color: #fff; /* To override default Bootstrap style */
     text-decoration: underline;
 }
 
-.highlight-img {
-    width: 100%;
+#highlights .card-img {
     height: 8rem;
-    object-fit: cover;
 }
 
-#pills-senator .highlight-img {
-    object-position: bottom;
+#highlights #pills-senator .highlight-img {
+    object-position: bottom; /* To elevate senators' busts in the frame */
 }
 
 /* Footer */

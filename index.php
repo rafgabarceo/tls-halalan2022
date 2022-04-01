@@ -26,6 +26,7 @@
     </header>
 
 	<main class="container">
+
 		<!-- First Row -->
 		<div class="row">
 			<!-- News Bites -->
@@ -35,14 +36,18 @@
 				Articles
 			</section>
 		</div>
+
 		<!-- Second Row -->
 		<div class="row">
+
             <!-- Debate, Forum, Interview Highlights -->
 			<section id="highlights" class="col">
-				<div class="section-heading-container border-top border-4 mb-2 py-2 d-flex flex-column flex-lg-row justify-content-lg-between align-items-lg-center">
+
+				<!-- Heading -->
+				<div class="sec-heading-container border-top border-4 mb-2 py-2 d-flex flex-column flex-lg-row justify-content-lg-between align-items-lg-center">
 					<h4 class="mb-4 m-lg-0">Debate, Forum, & Interview Highlights</h4>
 
-					<!-- Presidentiables, etc. Buttons -->
+					<!-- Bootstrap Pills: Presidentiables, Vice Presidentiables, Senatoriables -->
 					<ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
 						<li class="nav-item mx-3" role="presentation">
 							<button class="nav-link p-0 active" id="pills-pres-tab" data-bs-toggle="pill" data-bs-target="#pills-pres" type="button" role="tab" aria-controls="pills-pres" aria-selected="true">Presidentiables</button>
@@ -56,14 +61,12 @@
 					</ul>
 				</div>
 				
-				
-
-				<!-- Main Highlights Container -->
+				<!-- Container for Card Grid -->
 				<div class="tab-content" id="pills-tabContent">
-					<!-- Presidentiables -->
+
+					<!-- Presidential Debates et al. -->
 					<div class="tab-pane fade show active" id="pills-pres" role="tabpanel" aria-labelledby="pills-pres-tab">
 						<div class="row row-cols-1 row-cols-md-2 g-2">
-
 							<!-- PHP Loop to Render President Cards-->
 							<?php
 								$debatesList = json_decode( file_get_contents("json/president-highights.json"), true );
@@ -79,7 +82,7 @@
 										<div class="card border-0">
 											<div class="row g-0">
 												<div class="col-5 col-sm-4 col-lg-5 p-2">
-													<img src="<?php echo $highlightVisual; ?>" alt="" class="card-img highlight-img">
+													<img src="<?php echo $highlightVisual; ?>" alt="" class="card-img">
 												</div>
 												<div class="col-7 col-sm-8 col-lg-7 d-flex">
 													<div class="card-body d-flex flex-column justify-content-center">
@@ -92,14 +95,12 @@
 									</a>
 								</div>
 							<?php } ?>
-
 						</div>
 					</div>
 
 					<!-- Vice Presidentiables -->
 					<div class="tab-pane fade" id="pills-vp" role="tabpanel" aria-labelledby="pills-vp-tab">
 						<div class="row row-cols-1 row-cols-md-2 g-2">
-
 							<!-- PHP Loop to Render VP Cards -->
 							<?php
 								$debatesList = json_decode( file_get_contents("json/vp-highlights.json"), true );
@@ -115,7 +116,7 @@
 										<div class="card border-0">
 											<div class="row g-0">
 												<div class="col-5 col-sm-4 col-lg-5 p-2">
-													<img src="<?php echo $highlightVisual; ?>" alt="" class="card-img highlight-img">
+													<img src="<?php echo $highlightVisual; ?>" alt="" class="card-img">
 												</div>
 												<div class="col-7 col-sm-8 col-lg-7 d-flex">
 													<div class="card-body d-flex flex-column justify-content-center">
@@ -128,17 +129,15 @@
 									</a>
 								</div>
 							<?php } ?>
-
 						</div>
 					</div>
 
 					<!-- Senatoriables -->
 					<div class="tab-pane fade" id="pills-senator" role="tabpanel" aria-labelledby="pills-senator-tab">
-
-						<!-- Forums -->
+						
+						<!-- Cards for CNN PH Senatorial Forums -->
 						<h6 class="mt-4 mb-3 fst-italic">CNN Philippines Senatorial Forums</h6>
 						<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2">
-
 							<!-- PHP Loop to Render Senator Cards-->
 							<?php
 								$debatesList = json_decode( file_get_contents("json/sen-forum-highlights.json"), true );
@@ -154,7 +153,7 @@
 										<div class="card border-0">
 											<div class="row g-0">
 												<div class="col-5 col-sm-4 col-lg-5 p-2">
-													<img src="<?php echo $highlightVisual; ?>" alt="" class="card-img highlight-img">
+													<img src="<?php echo $highlightVisual; ?>" alt="" class="card-img">
 												</div>
 												<div class="col-7 col-sm-8 col-lg-7 d-flex">
 													<div class="card-body d-flex flex-column justify-content-center">
@@ -167,13 +166,11 @@
 									</a>
 								</div>
 							<?php } ?>
-
 						</div>
 
-						<!-- Debates -->
+						<!-- Cards for non-CNN Senatorial Debates et al. -->
 						<h6 class="mt-4 mb-3 fst-italic">Senatorial Debates</h6>
 						<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2">
-
 							<!-- PHP Loop to Render Senator Cards-->
 							<?php
 								$debatesList = json_decode( file_get_contents("json/sen-debate-highlights.json"), true );
@@ -189,7 +186,7 @@
 										<div class="card border-0">
 											<div class="row g-0">
 												<div class="col-5 col-sm-4 col-lg-5 p-2">
-													<img src="<?php echo $highlightVisual; ?>" alt="" class="card-img highlight-img">
+													<img src="<?php echo $highlightVisual; ?>" alt="" class="card-img">
 												</div>
 												<div class="col-7 col-sm-8 col-lg-7 d-flex">
 													<div class="card-body d-flex flex-column justify-content-center">
@@ -202,25 +199,23 @@
 									</a>
 								</div>
 							<?php } ?>
-
 						</div>
 
 					</div>
 
 				</div>
 
-
-
-
-
 			</section>
 		</div>
+
 		<!-- Third Row -->
 		<div class="row">
             <!-- Candidate Profiles -->
 			<section class="col">Candidate Profiles</section>
 		</div>
+
 	</main>
+	
 	<!-- Footer -->
 	<footer class="py-5">
 		<div class="container">
