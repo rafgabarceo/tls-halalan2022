@@ -98,6 +98,11 @@ section .sec-heading-container .nav-link:hover, .sec-heading-link:hover {
     border-color: var(--blue) !important; /* !important added to override default Bootstrap style */
 }
 
+#articles .card {
+    background-color: var(--light-blue);
+    height: 22rem;
+}
+
 /* Specific Styles for Highlights Section */
 #highlights {
     color: var(--red);
