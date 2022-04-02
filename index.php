@@ -46,8 +46,9 @@
 
 				<!-- Container for Card Grid -->
 				<div class="row row-cols-1 row-cols-md-2 g-2">
+					
 					<!-- PHP Loop to Render Cards -->
-					<?php for ($i = 0; $i < 4; $i++) { 
+					<?php for ($i = 0; $i < 6; $i++) { 
 						$data = callRESTAPI();
 
 						$date = $data[$i]["date"];
