@@ -34,7 +34,7 @@
 			<section class="col-lg-4 col-md-12">News Bites</section>
 
 			<!-- Articles -->
-			<section class="col-lg-8 col-md-12">
+			<section id="articles" class="col-lg-8 col-md-12">
 				<div class="sec-heading-container border-top border-4 mb-2 py-2 d-flex justify-content-between">
 					<h4>Articles</h4>
 					<a href="https://thelasallian.com/kicker/halalan-2022/" class="sec-heading-link">
