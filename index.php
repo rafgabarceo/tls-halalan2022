@@ -35,12 +35,37 @@
 
 			<!-- Articles -->
 			<section id="articles" class="col-lg-8 col-md-12">
+
+				<!-- Heading -->
 				<div class="sec-heading-container border-top border-4 mb-2 py-2 d-flex justify-content-between">
 					<h4>Articles</h4>
 					<a href="https://thelasallian.com/kicker/halalan-2022/" target="_blank" class="sec-heading-link">
 						All Articles <i class="bi-arrow-right-short" aria-label="Right Arrow"></i>
 					</a>
 				</div>
+
+				<!-- Container for Card Grid -->
+				<div class="row row-cols-1 row-cols-md-2 g-2">
+					<!-- PHP Loop to Render Cards -->
+					<?php for ($i = 0; $i < 4; $i++) { 
+						$data = callRESTAPI();
+
+						$date = $data[$i]["date"];
+						$link = $data[$i]["link"];
+						$title = $data[$i]["title"]["rendered"];
+						$authors = $data[$i]["authors"][0]["display_name"];
+						$media = $data[$i]["jetpack_featured_media_url"];
+					?>
+						<div class="col">
+							<div class="card border-90">
+								<img src="<?php echo $media; ?>" alt="" class="card-img">
+								<h5 class="card-title"><?php echo $title; ?></h5>
+								<p class="card-text"><?php echo $authors; ?></p>
+							</div>
+						</div>
+					<?php } ?>
+				</div>
+
 			</section>
 
 		</div>
@@ -260,3 +285,28 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>
+
+<!-- TEMPORARY FUNCTION TO CALL VANGUARD ARTICLES FOR TESTING -->
+<?php
+	function callRESTAPI() {
+		$curl = curl_init();
+
+		curl_setopt_array($curl, array(
+		CURLOPT_URL => 'https://thelasallian.com/wp-json/wp/v2/posts?_fields=jetpack_featured_media_url,date,link,title,authors&categories=1883',
+		CURLOPT_RETURNTRANSFER => true,
+		CURLOPT_ENCODING => '',
+		CURLOPT_MAXREDIRS => 10,
+		CURLOPT_TIMEOUT => 0,
+		CURLOPT_FOLLOWLOCATION => true,
+		CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+		CURLOPT_CUSTOMREQUEST => 'GET',
+		));
+
+		$response = curl_exec($curl);
+
+		curl_close($curl);
+
+		$response = json_decode($response, true);
+		return $response;
+	}
+?>
