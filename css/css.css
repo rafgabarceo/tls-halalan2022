@@ -1,8 +1,10 @@
 :root {
     --red: #B42828;
     --light-red: #FBEEEE;
+    --light-red-hover: #F3D9D9;
     --blue: #165D8B;
     --light-blue: #EBF6FF;
+    --light-blue-hover: #D4E7F5;
     --yellow: #DC8E20;
     --light-yellow: #FFF3E2;
     --brown: #462C08;
@@ -67,6 +69,10 @@ section a {
     color: inherit;
 }
 
+section a:hover {
+    color: inherit;
+}
+
 section .card-img {
     object-fit: cover;
 }
@@ -84,6 +90,10 @@ section .card-text {
     background-color: var(--light-red);
 }
 
+#highlights .card:hover {
+    background-color: var(--light-red-hover);
+}
+
 #highlights > .sec-heading-container {
     border-color: var(--red) !important; /* !important added to override default Bootstrap style */
 }
@@ -91,6 +101,10 @@ section .card-text {
 #highlights > .sec-heading-container .nav-link {
     color: var(--red); /* To override default Bootstrap style */
     font-weight: 500; /* Bootstrap has no utility class for semibold */
+}
+
+#highlights > .sec-heading-container .nav-link:hover {
+    text-decoration: underline;
 }
 
 #highlights > .sec-heading-container .nav-link.active {
