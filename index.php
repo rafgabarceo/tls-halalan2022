@@ -87,14 +87,14 @@
 					<h4 class="mb-4 m-lg-0">Debate, Forum, & Interview Highlights</h4>
 
 					<!-- Bootstrap Pills: Presidentiables, Vice Presidentiables, Senatoriables -->
-					<ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
-						<li class="nav-item mx-3" role="presentation">
+					<ul class="nav nav-pills d-flex justify-content-around" id="pills-tab" role="tablist">
+						<li class="nav-item mx-lg-3" role="presentation">
 							<button class="nav-link p-0 active" id="pills-pres-tab" data-bs-toggle="pill" data-bs-target="#pills-pres" type="button" role="tab" aria-controls="pills-pres" aria-selected="true">Presidentiables</button>
 						</li>
-						<li class="nav-item mx-3" role="presentation">
+						<li class="nav-item mx-lg-3" role="presentation">
 							<button class="nav-link p-0" id="pills-vp-tab" data-bs-toggle="pill" data-bs-target="#pills-vp" type="button" role="tab" aria-controls="pills-vp" aria-selected="false">Vice Presidentiables</button>
 						</li>
-						<li class="nav-item mx-3 me-lg-0" role="presentation">
+						<li class="nav-item mx-lg-3 me-lg-0" role="presentation">
 							<button class="nav-link p-0" id="pills-senator-tab" data-bs-toggle="pill" data-bs-target="#pills-senator" type="button" role="tab" aria-controls="pills-senator" aria-selected="false">Senatoriables</button>
 						</li>
 					</ul>
