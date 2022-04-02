@@ -2,7 +2,7 @@
     --red: #B42828;
     --light-red: #FBEEEE;
     --light-red-hover: #F3D9D9;
-    --blue: #165D8B;
+    --blue: #16538B;
     --light-blue: #EBF6FF;
     --light-blue-hover: #D4E7F5;
     --yellow: #DC8E20;
@@ -81,6 +81,23 @@ section .card-text {
     font-size: .9em;
 }
 
+section .sec-heading-container .nav-link, .sec-heading-link {
+    font-weight: 500; /* Bootstrap has no utility class for semibold */
+}
+
+section .sec-heading-container .nav-link:hover, .sec-heading-link:hover {
+    text-decoration: underline;
+}
+
+/* Specific Styles for Articles Section */
+#articles {
+    color: var(--blue);
+}
+
+#articles > .sec-heading-container {
+    border-color: var(--blue) !important; /* !important added to override default Bootstrap style */
+}
+
 /* Specific Styles for Highlights Section */
 #highlights {
     color: var(--red);
@@ -100,11 +117,6 @@ section .card-text {
 
 #highlights > .sec-heading-container .nav-link {
     color: var(--red); /* To override default Bootstrap style */
-    font-weight: 500; /* Bootstrap has no utility class for semibold */
-}
-
-#highlights > .sec-heading-container .nav-link:hover {
-    text-decoration: underline;
 }
 
 #highlights > .sec-heading-container .nav-link.active {
