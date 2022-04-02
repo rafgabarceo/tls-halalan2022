@@ -104,6 +104,10 @@ section .sec-heading-container .nav-link:hover, .sec-heading-link:hover {
     height: 22rem;
 }
 
+#articles .card:hover {
+    background-color: var(--light-blue-hover);
+}
+
 /* Specific Styles for Highlights Section */
 #highlights {
     color: var(--red);

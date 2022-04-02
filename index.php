@@ -57,14 +57,16 @@
 						$media = $data[$i]["jetpack_featured_media_url"];
 					?>
 						<div class="col">
-							<div class="card border-0 p-2 d-flex flex-column justify-content-end">
-								<img src="<?php echo $media; ?>" alt="" class="card-img h-25 flex-grow-1"> <!-- flex grow wouldn't work without setting a height -->
-								<!-- <div class="bg-primary flex-grow-1">Test</div> -->
-								<div class ="p-3 pt-4">
-									<h5 class="card-title"><?php echo $title; ?></h5>
-									<p class="card-text"><?php echo $authors; ?></p>
+							<a href="<?php echo $link; ?>" target="_blank">
+								<div class="card border-0 p-2 d-flex flex-column justify-content-end">
+									<img src="<?php echo $media; ?>" alt="" class="card-img h-25 flex-grow-1"> <!-- flex grow wouldn't work without setting a height -->
+									<!-- <div class="bg-primary flex-grow-1">Test</div> -->
+									<div class ="p-3 pt-4">
+										<h5 class="card-title"><?php echo $title; ?></h5>
+										<p class="card-text"><?php echo $authors; ?></p>
+									</div>
 								</div>
-							</div>
+							</a>
 						</div>
 					<?php } ?>
 				</div>
