@@ -29,12 +29,20 @@
 
 		<!-- First Row -->
 		<div class="row">
+
 			<!-- News Bites -->
 			<section class="col-lg-4 col-md-12">News Bites</section>
+
 			<!-- Articles -->
 			<section class="col-lg-8 col-md-12">
-				Articles
+				<div class="sec-heading-container border-top border-4 mb-2 py-2 d-flex justify-content-between">
+					<h4>Articles</h4>
+					<a href="https://thelasallian.com/kicker/halalan-2022/" class="sec-heading-link">
+						All Articles <i class="bi-arrow-right-short" aria-label="Right Arrow"></i>
+					</a>
+				</div>
 			</section>
+
 		</div>
 
 		<!-- Second Row -->
