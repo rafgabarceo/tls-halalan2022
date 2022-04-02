@@ -83,6 +83,7 @@ section .card-text {
 
 section .sec-heading-container .nav-link, .sec-heading-link {
     font-weight: 500; /* Bootstrap has no utility class for semibold */
+    font-size: .85em;
 }
 
 section .sec-heading-container .nav-link:hover, .sec-heading-link:hover {
