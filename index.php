@@ -52,21 +52,20 @@
 					
 				?>
 					
-
-					<div class="tweet-card p-3 border">
-						<div class="tweet-card-header d-flex justify-content-between">
+					<div class="tweet-card p-4 card">
+						<div class="tweet-card-header d-flex justify-content-between mb-3">
 							<!-- Logo and Username -->
-							<div class="d-flex">
-								<img src="assets/tls-twitter-avatar.png" class="tweet-avatar" alt="">
+							<div class="d-flex align-items-center">
+								<img src="assets/tls-twitter-avatar.png" class="tweet-avatar me-3" alt="">
 								<div>
-									<h5>The LaSallian</h5>
-									<h6>@thelasallian</h6>
+									<h5 class="tweet-card-hdr-text m-0">The LaSallian</h5>
+									<h6 class="tweet-card-hdr-text m-0">@thelasallian</h6>
 								</div>
 							</div>
 							<!-- Timestamp and Logo -->
-							<div class="d-flex">
-								<p><?php echo date('M d, g:i A', $tweetTimestamp); ?></p>
-								<img src="assets/twitter-logo.svg" class="tweet-twitter-logo" alt="">
+							<div class="d-flex align-self-start align-items-center">
+								<p class="tweet-card-hdr-text m-0"><?php echo date('M d, g:i A', strtotime($tweetTimestamp)); ?></p>
+								<img src="assets/twitter-logo.svg" class="tweet-twitter-logo ms-2" alt="">
 							</div>
 						</div>
 						<div class="tweet-card-content">

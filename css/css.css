@@ -5,7 +5,7 @@
     --blue: #16538B;
     --light-blue: #EBF6FF;
     --light-blue-hover: #D4E7F5;
-    --yellow: #DC8E20;
+    --yellow: #C28024;
     --light-yellow: #FFF3E2;
     --brown: #462C08;
     --green: #003300;
@@ -103,6 +103,35 @@ section .sec-heading-container .nav-link:hover, .sec-heading-link:hover {
 #newsbits > .sec-heading-container {
     border-color: var(--yellow) !important; /* !important added to override default Bootstrap style */
     color: var(--yellow);
+}
+
+.tweet-card {
+    background-color: var(--light-yellow);
+}
+
+.tweet-card-hdr-text {
+    font-family: 'Red Hat Text';
+    color: var(--yellow);
+    font-weight: 600;
+    font-size: .82em;
+}
+
+h6.tweet-card-hdr-text { /* @thelasallian */
+    font-weight: 400;
+}
+
+.tweet-card .tweet-avatar {
+    width: 40px;
+    height: 40px;
+}
+
+.tweet-card .tweet-twitter-logo {
+    width: 18px;
+    height: 18px;
+}
+
+.tweet-card-content {
+    font-size: .95em;
 }
 
 /* Specific Styles for Articles Section */
