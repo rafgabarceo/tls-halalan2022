@@ -21,9 +21,11 @@
   <body>
 	<h1>Hello Navbar!</h1>
 
-    <header class="d-flex flex-column align-items-center">
-        <img src="assets/halalan-2022-title.svg" alt="#Halalan2022" class="header-wordmark mb-3">
-        <h1 class="header-subtitle"><strong>TLS</strong> 2022 National Election Web Special</h1>
+    <header>
+        <div class="container d-flex flex-column align-items-center">
+			<img src="assets/halalan-2022-title.svg" alt="#Halalan2022" class="header-wordmark mb-3 img-fluid">
+			<h1 class="header-subtitle text-center"><strong>TLS</strong> 2022 National Election Web Special</h1>
+		</div>
     </header>
 
 	<main class="container">

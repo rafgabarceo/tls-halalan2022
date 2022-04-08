@@ -26,7 +26,6 @@ header {
     height: 441.5px;
     padding-top: 70px;
     color: #FFF;
-
 }
 
 .header-wordmark {
@@ -34,7 +33,7 @@ header {
 }
 
 .header-subtitle {
-    font-size: 21px;
+    font-size: 1.25em;
 }
 
 @media only screen and (max-width: 860px) {
