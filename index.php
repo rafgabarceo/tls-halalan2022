@@ -31,8 +31,53 @@
 		<!-- First Row -->
 		<div class="row mb-4">
 
-			<!-- News Bites -->
-			<section class="col-lg-4 col-md-12">News Bites</section>
+			<!-- Newsbits -->
+			<section id="newsbits" class="col-lg-4 col-md-12 mb-lg-0 mb-4">
+
+				<!-- Heading -->
+				<div class="sec-heading-container border-top border-4 mb-2 py-2 d-flex justify-content-between align-items-center">
+					<h4 class="mb-0">Latest News</h4>
+					<a href="https://thelasallian.com/kicker/halalan-2022/" target="_blank" class="sec-heading-link">
+						All Tweets <i class="bi-box-arrow-in-up-right" aria-label="Right Arrow"></i>
+					</a>
+				</div>
+
+				<!-- Container for Tweets -->
+				<div class="tweets-container d-flex flex-lg-column">
+					<!-- PHP Loop to Render Tweets -->
+					<?php
+						$fullTweetData = $_SESSION["TWITTER_INFO"];
+						$tweetData = $fullTweetData["data"];
+
+						foreach ($tweetData as $item) {
+							$tweetText = $item["text"];
+							$tweetTimestamp = $item["created_at"];
+					?>
+						<!-- Tweet Card -->
+						<div class="tweet-card rounded p-3 me-2 mb-0 mb-lg-2 me-lg-0 align-self-start">
+							<div class="tweet-card-header d-flex justify-content-between mb-3">
+								<!-- Logo and Username -->
+								<div class="twitter-handle d-flex align-items-center">
+									<img src="assets/tls-twitter-avatar.png" class="tweet-avatar me-3" alt="">
+									<div>
+										<h5 class="tweet-card-hdr-text m-0">The LaSallian</h5>
+										<h6 class="tweet-card-hdr-text m-0">@thelasallian</h6>
+									</div>
+								</div>
+								<!-- Timestamp and Logo -->
+								<div class="d-flex align-self-start align-items-center flex-shrink-1">
+									<p class="tweet-card-hdr-text m-0 text-end"><?php echo date('M d, g:i A', strtotime($tweetTimestamp)); ?></p>
+									<img src="assets/twitter-logo.svg" class="tweet-twitter-logo ms-3" alt="">
+								</div>
+							</div>
+							<div class="tweet-card-content">
+								<p class="m-0"><?php echo $tweetText; ?></p>
+							</div>
+						</div>
+					<?php } ?>
+				</div>
+
+			</section>
 
 			<!-- Articles -->
 			<section id="articles" class="col-lg-8 col-md-12">
