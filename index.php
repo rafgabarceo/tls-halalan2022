@@ -45,11 +45,13 @@
 				<!-- Container for Tweets -->
 				<div class="tweets-container d-flex flex-lg-column">
 					<!-- PHP Loop to Render Tweets -->
-					<?php for ($i = 0; $i < 5; $i++) { 
-						$tweetData = $_SESSION["TWITTER_INFO"];
+					<?php
+						$fullTweetData = $_SESSION["TWITTER_INFO"];
+						$tweetData = $fullTweetData["data"];
 
-						$tweetText = $tweetData["data"][$i]["text"];
-						$tweetTimestamp = $tweetData["data"][$i]["created_at"];
+						foreach ($tweetData as $item) {
+							$tweetText = $item["text"];
+							$tweetTimestamp = $item["created_at"];
 					?>
 						<!-- Tweet Card -->
 						<div class="tweet-card rounded p-3 me-2 mb-0 mb-lg-2 me-lg-0 align-self-start">
