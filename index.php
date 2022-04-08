@@ -50,9 +50,9 @@
 
 						$tweetText = $tweetData["data"][$i]["text"];
 						$tweetTimestamp = $tweetData["data"][$i]["created_at"];
-						
 					?>
-						<div class="tweet-card rounded p-3 me-2 mb-0 mb-lg-2 me-lg-0 align-self-start align-self-lg-stretch">
+						<!-- Tweet Card -->
+						<div class="tweet-card rounded p-3 me-2 mb-0 mb-lg-2 me-lg-0 align-self-start">
 							<div class="tweet-card-header d-flex justify-content-between mb-3">
 								<!-- Logo and Username -->
 								<div class="twitter-handle d-flex align-items-center">
