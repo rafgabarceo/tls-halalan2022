@@ -95,6 +95,16 @@ section .sec-heading-container .nav-link:hover, .sec-heading-link:hover {
     text-decoration: underline;
 }
 
+/* Specific Styles for Tweets Section */
+#newsbits {
+    color: var(--brown);
+}
+
+#newsbits > .sec-heading-container {
+    border-color: var(--yellow) !important; /* !important added to override default Bootstrap style */
+    color: var(--yellow);
+}
+
 /* Specific Styles for Articles Section */
 #articles {
     color: var(--blue);
