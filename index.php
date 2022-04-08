@@ -50,12 +50,21 @@
 					
 					<!-- PHP Loop to Render Cards -->
 					<?php for ($i = 0; $i < 6; $i++) { 
-						$data = callRESTAPI();
+						$data = $_SESSION["ARTICLE_INFO"];
 
 						$date = $data[$i]["date"];
 						$link = $data[$i]["link"];
 						$title = $data[$i]["title"]["rendered"];
-						$authors = $data[$i]["authors"][0]["display_name"];
+
+						for ($j = 0; $j < 3; $j++) {
+							if ($j == 0) {
+								$authors .= $data[$i]["authors"][$j]["display_name"];
+							} else if ($j > 0 && !empty($data[$i]["authors"][$j]["display_name"]) ) {
+								$authors .= ", ";
+								$authors .= $data[$i]["authors"][$j]["display_name"];
+							}
+						}
+
 						$media = $data[$i]["jetpack_featured_media_url"];
 					?>
 						<div class="col">
@@ -70,7 +79,7 @@
 								</div>
 							</a>
 						</div>
-					<?php } ?>
+					<?php $authors = ""; } ?>
 				</div>
 
 			</section>
