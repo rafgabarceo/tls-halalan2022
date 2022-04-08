@@ -301,28 +301,3 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>
-
-<!-- TEMPORARY FUNCTION TO CALL VANGUARD ARTICLES FOR TESTING -->
-<?php
-	function callRESTAPI() {
-		$curl = curl_init();
-
-		curl_setopt_array($curl, array(
-		CURLOPT_URL => 'https://thelasallian.com/wp-json/wp/v2/posts?_fields=jetpack_featured_media_url,date,link,title,authors&categories=1883',
-		CURLOPT_RETURNTRANSFER => true,
-		CURLOPT_ENCODING => '',
-		CURLOPT_MAXREDIRS => 10,
-		CURLOPT_TIMEOUT => 0,
-		CURLOPT_FOLLOWLOCATION => true,
-		CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-		CURLOPT_CUSTOMREQUEST => 'GET',
-		));
-
-		$response = curl_exec($curl);
-
-		curl_close($curl);
-
-		$response = json_decode($response, true);
-		return $response;
-	}
-?>
