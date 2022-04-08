@@ -32,7 +32,7 @@
 		<div class="row mb-4">
 
 			<!-- Newsbits -->
-			<section id="newsbits" class="col-lg-4 col-md-12">
+			<section id="newsbits" class="col-lg-4 col-md-12 mb-lg-0 mb-4">
 
 				<!-- Heading -->
 				<div class="sec-heading-container border-top border-4 mb-2 py-2 d-flex justify-content-between align-items-center">
@@ -42,37 +42,38 @@
 					</a>
 				</div>
 
-				<!-- Tweets -->
+				<!-- Container for Tweets -->
+				<div class="tweets-container d-flex flex-lg-column">
+					<!-- PHP Loop to Render Tweets -->
+					<?php for ($i = 0; $i < 5; $i++) { 
+						$tweetData = $_SESSION["TWITTER_INFO"];
 
-				<?php for ($i = 0; $i < 5; $i++) { 
-					$tweetData = $_SESSION["TWITTER_INFO"];
-
-					$tweetText = $tweetData["data"][$i]["text"];
-					$tweetTimestamp = $tweetData["data"][$i]["created_at"];
-					
-				?>
-					
-					<div class="tweet-card p-4 card">
-						<div class="tweet-card-header d-flex justify-content-between mb-3">
-							<!-- Logo and Username -->
-							<div class="d-flex align-items-center">
-								<img src="assets/tls-twitter-avatar.png" class="tweet-avatar me-3" alt="">
-								<div>
-									<h5 class="tweet-card-hdr-text m-0">The LaSallian</h5>
-									<h6 class="tweet-card-hdr-text m-0">@thelasallian</h6>
+						$tweetText = $tweetData["data"][$i]["text"];
+						$tweetTimestamp = $tweetData["data"][$i]["created_at"];
+						
+					?>
+						<div class="tweet-card rounded p-3 me-2 mb-0 mb-lg-2 me-lg-0 align-self-start align-self-lg-stretch">
+							<div class="tweet-card-header d-flex justify-content-between mb-3">
+								<!-- Logo and Username -->
+								<div class="twitter-handle d-flex align-items-center">
+									<img src="assets/tls-twitter-avatar.png" class="tweet-avatar me-3" alt="">
+									<div>
+										<h5 class="tweet-card-hdr-text m-0">The LaSallian</h5>
+										<h6 class="tweet-card-hdr-text m-0">@thelasallian</h6>
+									</div>
+								</div>
+								<!-- Timestamp and Logo -->
+								<div class="d-flex align-self-start align-items-center flex-shrink-1">
+									<p class="tweet-card-hdr-text m-0 text-end"><?php echo date('M d, g:i A', strtotime($tweetTimestamp)); ?></p>
+									<img src="assets/twitter-logo.svg" class="tweet-twitter-logo ms-3" alt="">
 								</div>
 							</div>
-							<!-- Timestamp and Logo -->
-							<div class="d-flex align-self-start align-items-center">
-								<p class="tweet-card-hdr-text m-0"><?php echo date('M d, g:i A', strtotime($tweetTimestamp)); ?></p>
-								<img src="assets/twitter-logo.svg" class="tweet-twitter-logo ms-2" alt="">
+							<div class="tweet-card-content">
+								<p class="m-0"><?php echo $tweetText; ?></p>
 							</div>
 						</div>
-						<div class="tweet-card-content">
-							<p class="m-0"><?php echo $tweetText; ?></p>
-						</div>
-					</div>
-				<?php } ?>
+					<?php } ?>
+				</div>
 
 			</section>
 

@@ -56,7 +56,7 @@ header {
         background-size: cover;
         padding: 60px 0;
         height: auto;
-        } 
+    } 
 }
 
 .row > section { /* Temporary border for guidance */
@@ -107,6 +107,21 @@ section .sec-heading-container .nav-link:hover, .sec-heading-link:hover {
 
 .tweet-card {
     background-color: var(--light-yellow);
+}
+
+@media only screen and (max-width: 991px) {
+    .tweets-container {
+        overflow-x: scroll;
+    }
+    .tweet-card {
+        min-width: 375px;
+    }
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1176px) { /* This avoid orphans in the twitter handle when resizing the window */
+    .twitter-handle {
+        width: 100%;
+    }
 }
 
 .tweet-card-hdr-text {
