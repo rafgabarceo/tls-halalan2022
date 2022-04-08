@@ -31,8 +31,8 @@
 		<!-- First Row -->
 		<div class="row mb-4">
 
-			<!-- News Bites -->
-			<section class="col-lg-4 col-md-12">
+			<!-- Newsbits -->
+			<section id="newsbits" class="col-lg-4 col-md-12">
 
 				<!-- Heading -->
 				<div class="sec-heading-container border-top border-4 mb-2 py-2 d-flex justify-content-between align-items-center">
