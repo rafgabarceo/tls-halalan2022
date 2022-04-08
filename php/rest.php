@@ -10,6 +10,7 @@
         } else {
             $json_bearer = json_decode($bearer, true);
             $authHeaderPrepare = "Authorization: Bearer ".$json_bearer["Bearer"];
+            $_SESSION["TWITTER_INFO"] = twitterFetch($authHeaderPrepare);
         }
 
     } else if(session_status() == PHP_SESSION_ACTIVE){
