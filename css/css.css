@@ -56,6 +56,7 @@ header {
         background-size: cover;
         padding: 60px 0;
         height: auto;
+        margin-bottom: 3rem; 
     } 
 }
 
@@ -207,6 +208,7 @@ footer {
     background: linear-gradient(45deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0)),
                 url('../assets/footer-background.png') center -8rem;
     background-size: cover;
+    margin-top: 3rem;
 }
 
 @media only screen and (max-width: 845px) {
