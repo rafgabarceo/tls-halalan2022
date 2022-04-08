@@ -32,7 +32,17 @@
 		<div class="row mb-4">
 
 			<!-- News Bites -->
-			<section class="col-lg-4 col-md-12">News Bites</section>
+			<section class="col-lg-4 col-md-12">
+
+				<!-- Heading -->
+				<div class="sec-heading-container border-top border-4 mb-2 py-2 d-flex justify-content-between align-items-center">
+					<h4 class="mb-0">Newsbits</h4>
+					<a href="https://thelasallian.com/kicker/halalan-2022/" target="_blank" class="sec-heading-link">
+						All Tweets <i class="bi-box-arrow-in-up-right" aria-label="Right Arrow"></i>
+					</a>
+				</div>
+
+			</section>
 
 			<!-- Articles -->
 			<section id="articles" class="col-lg-8 col-md-12">
