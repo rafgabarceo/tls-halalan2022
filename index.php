@@ -42,6 +42,39 @@
 					</a>
 				</div>
 
+				<!-- Tweets -->
+
+				<?php for ($i = 0; $i < 5; $i++) { 
+					$tweetData = $_SESSION["TWITTER_INFO"];
+
+					$tweetText = $tweetData["data"][$i]["text"];
+					$tweetTimestamp = $tweetData["data"][$i]["created_at"];
+					
+				?>
+					
+
+					<div class="tweet-card p-3 border">
+						<div class="tweet-card-header d-flex justify-content-between">
+							<!-- Logo and Username -->
+							<div class="d-flex">
+								<img src="assets/tls-twitter-avatar.png" class="tweet-avatar" alt="">
+								<div>
+									<h5>The LaSallian</h5>
+									<h6>@thelasallian</h6>
+								</div>
+							</div>
+							<!-- Timestamp and Logo -->
+							<div class="d-flex">
+								<p><?php echo date('M d, g:i A', $tweetTimestamp); ?></p>
+								<img src="assets/twitter-logo.svg" class="tweet-twitter-logo" alt="">
+							</div>
+						</div>
+						<div class="tweet-card-content">
+							<p class="m-0"><?php echo $tweetText; ?></p>
+						</div>
+					</div>
+				<?php } ?>
+
 			</section>
 
 			<!-- Articles -->
