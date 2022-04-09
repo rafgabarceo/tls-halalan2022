@@ -46,6 +46,7 @@
 				<div class="tweets-container d-flex flex-lg-column">
 					<!-- PHP Loop to Render Tweets -->
 					<?php
+						// The truth will set you free.
 						$fullTweetData = $_SESSION["TWITTER_INFO"];
 						$tweetData = $fullTweetData["data"];
 
