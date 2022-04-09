@@ -16,10 +16,38 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Red+Hat+Text:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet"> 
 
-	<title>Hello, world!</title>
+	<title>TLS 2022 National Election Web Special</title>
   </head>
   <body>
-	<h1>Hello Navbar!</h1>
+	<div class="container">
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<a class="navbar-brand" href="#">
+				<img src="assets/tls-star.svg"
+					 alt="TLS Star Logo" width="55" height="55">
+				<img src="assets/tls-wordmark.svg"
+					 alt="TLS Name Logo">
+			</a>
+			
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-bs-toggle="collapse"
+				data-bs-target="#toggleMobileMenu"
+				aria-controls="toggleMobileMenu"
+				aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="toggleMobileMenu">
+				<ul class="navbar-nav ms-auto text-center">
+					<li><a class="nav-link" href="#articles">Articles</a></li>
+					<li><a class="nav-link" href="#highlights">Debate, Forum, & Interview Highlights</a></li>
+					<li><a class="nav-link" href="https://thelasallian.com" target="_blank">Main Website</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
 
     <header>
         <div class="container d-flex flex-column align-items-center">
@@ -306,10 +334,11 @@
 		</div>
 
 		<!-- Third Row -->
+		<!-- Secreeeet muna, labyu
 		<div class="row">
-            <!-- Candidate Profiles -->
 			<section class="col">Candidate Profiles</section>
 		</div>
+		-->
 
 	</main>
 	

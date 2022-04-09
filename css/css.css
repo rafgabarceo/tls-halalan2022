@@ -20,6 +20,15 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
 }
 
+a.nav-link {
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+    font-family:'Red Hat Text';
+    font-weight: 500;
+    font-size: 16;
+}
+
 header {
     background-image: url(../assets/wavy-header.png);
     background-position: center;
@@ -234,8 +243,11 @@ footer strong, footer .nav-item i {
 .footer-logo {
     width: 78px;
 }
+<<<<<<< HEAD
 
 .footer-developers {
     font-size: .85em;
     font-weight: 500;
 }
+=======
+>>>>>>> 3fdc4137c2658846616d7001f79dc83205905965
