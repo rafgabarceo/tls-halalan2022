@@ -9,7 +9,7 @@
 	<!-- Bootstrap CSS -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/css.css?version=1">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -323,7 +323,7 @@
 					<!-- Footer Text -->
 					<p class="footer-description"><strong>The LaSallian</strong> is the official student publication of De La Salle University. It is of the students, by the students, and for the students. Our student writers, photographers, videographers, artists, and web managers are committed to the 61-year tradition of journalistic excellence and issue-oriented critical thinking.</p>
 					<!-- Social Media Links/Icons -->
-					<ul class="nav">
+					<ul class="nav mb-3">
 						<li class="nav-item">
 							<a href="https://facebook.com/thelasallian" class="nav-link ps-lg-0"><i class="bi-facebook aria-label="Facebook"></i></a>
 						</li>
@@ -340,6 +340,8 @@
 							<a href="mailto:info@thelasallian.com" class="nav-link"><i class="bi-envelope-fill" aria-label="Email"></i></a>
 						</li>
 					</ul>
+					<!-- Website Developers -->
+					<p class="footer-developers">Website by Rafael Gabriel Arceo, Angelo Guerra, and Ronn Parcia</p>
 				</div>
 			</div>
 		</div>

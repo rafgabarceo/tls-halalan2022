@@ -234,3 +234,8 @@ footer strong, footer .nav-item i {
 .footer-logo {
     width: 78px;
 }
+
+.footer-developers {
+    font-size: .85em;
+    font-weight: 500;
+}
