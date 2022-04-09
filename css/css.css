@@ -232,7 +232,8 @@ footer {
 @media only screen and (max-width: 845px) {
     footer {
         /* Stops background-image from resizing on smaller screens */
-        background-size: 1000px; 
+        background-size: 75rem;
+        background-position: top center; 
     }
 }
 
