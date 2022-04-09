@@ -67,7 +67,7 @@
 				<!-- Heading -->
 				<div class="sec-heading-container border-top border-4 mb-2 py-2 d-flex justify-content-between align-items-center">
 					<h4 class="mb-0">Latest News</h4>
-					<a href="https://thelasallian.com/kicker/halalan-2022/" target="_blank" class="sec-heading-link">
+					<a href="https://twitter.com/search?q=(%23Halalan2022)%20(from%3ATheLasallian)" target="_blank" class="sec-heading-link">
 						All Tweets <i class="bi-box-arrow-in-up-right" aria-label="Right Arrow"></i>
 					</a>
 				</div>
