@@ -76,10 +76,6 @@ header {
     } 
 }
 
-.row > section { /* Temporary border for guidance */
-    border: 1px dashed blue;
-}
-
 /* Common Styles for All Sections */
 section a { 
     text-decoration: none;
@@ -164,6 +160,12 @@ h6.tweet-card-hdr-text { /* @thelasallian */
 
 .tweet-card-content {
     font-size: .95em;
+}
+
+/* Specific Styles for Latest News Section */
+#newsbits {
+    max-height: 75rem;
+    overflow: scroll;
 }
 
 /* Specific Styles for Articles Section */
