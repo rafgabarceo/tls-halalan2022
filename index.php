@@ -301,6 +301,39 @@
 							<?php } ?>
 						</div>
 
+						<!-- Cards for Senatorial Candidates' Forum on the Environment -->
+						<h6 class="mt-4 mb-3 fst-italic">Senatorial Candidates' Forum on the Environment</h6>
+						<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2">
+							<!-- PHP Loop to Render Senator Cards-->
+							<?php
+								$debatesList = json_decode( file_get_contents("json/sen-environment-highlights.json"), true );
+
+								foreach($debatesList as $item) { //foreach element in $arr
+									$highlightTitle = $item['title']; 
+									$highlightDate = $item['date']; 
+									$highlightVisual = $item['visual']; 
+									$highlightURL = $item["url"];
+							?>
+								<div class="col">
+									<a href="<?php echo $highlightURL; ?>" target="_blank">
+										<div class="card border-0">
+											<div class="row g-0">
+												<div class="col-5 col-sm-4 col-lg-5 p-2">
+													<img src="<?php echo $highlightVisual; ?>" alt="" class="card-img">
+												</div>
+												<div class="col-7 col-sm-8 col-lg-7 d-flex">
+													<div class="card-body d-flex flex-column justify-content-center">
+														<h5 class="card-title"><?php echo $highlightTitle; ?></h5>
+														<p class="card-text"><?php echo $highlightDate; ?></p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+							<?php } ?>
+						</div>
+
 						<!-- Cards for non-CNN Senatorial Debates et al. -->
 						<h6 class="mt-4 mb-3 fst-italic">Senatorial Debates</h6>
 						<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2">
